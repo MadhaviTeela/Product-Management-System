@@ -1,0 +1,70 @@
+.product-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input fields */
+.product-form input,
+.product-form textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9f9f9;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+/* Textarea */
+.product-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Form actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Add/Update button */
+.form-actions button[type="submit"] {
+  background: #007bff;
+  color: white;
+  font-weight: 500;
+}
+.form-actions button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Cancel button */
+.form-actions button[type="button"] {
+  background: #6c757d;
+  color: white;
+}
+.form-actions button[type="button"]:hover {
+  background: #5a6268;
+}

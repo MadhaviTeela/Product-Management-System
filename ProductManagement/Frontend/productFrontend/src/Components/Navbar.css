@@ -1,0 +1,77 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f3640; /* dark grey navbar */
+  color: white;
+  padding: 14px 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* ===== SEARCH BAR ===== */
+.navbar-controls input {
+  padding: 10px 14px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 280px;
+  background: #f1f1f1;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.navbar-controls input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* ===== PROFESSIONAL BUTTONS ===== */
+.navbar-controls button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Sort button */
+.sort-btn {
+  background: #6c757d; /* grey */
+  color: white;
+}
+.sort-btn:hover {
+  background: #5a6268;
+}
+
+/* Add Product button */
+.add-btn {
+  background: #007bff; /* professional blue */
+  color: white;
+}
+.add-btn:hover {
+  background: #0056b3;
+}
+
+/* ===== PAGE BACKGROUND (apply globally in index.css or App.css) ===== */
+body {
+  background: #f0f2f5; /* light grey background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: #333;
+}
